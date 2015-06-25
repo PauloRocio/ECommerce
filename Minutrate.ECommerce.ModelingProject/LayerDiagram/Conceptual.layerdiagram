@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4fe47086-c093-4fdc-b73a-47a4ef69d293" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="8e6b5312-325e-40f7-ad39-5eee4d4fd41c" name="Comment1">
+      <body>A camada de apresentação não dependerá de referências físicas do projeto. Todo consumo será através de servições RESTFul.</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="a8a2b85e-2e3b-4123-8dee-e9ac80ab4fbe" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="186c6494-f8d6-4cc9-b627-28f4f84bab16" name="Comment2">
+      <body>Projeto com os mecanismos arquiteturais.</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="118a0c05-bf9e-4b42-9839-f57baa51ce86" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="730d18af-bc1f-4864-8759-2411c2e046b9" name="Comment3">
+      <body>Data Access Layer</body>
+    </comment>
+    <comment Id="3c447bb4-153b-4cfc-8bf3-79b6456ff8d5" name="Comment311">
+      <body>Business Logic Layer</body>
+    </comment>
+    <comment Id="9b66d5bd-aa97-4df3-a677-a86fe3845ef1" name="Comment3111">
+      <body>Service Layer</body>
+    </comment>
+    <comment Id="5114e732-1c6a-44e1-9723-5542fe1d6653" name="Comment31111">
+      <body>Presentation Layer</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="c7555bc4-197e-4dff-bac7-b39cf03b1e42" name="Minutrade.ECommerce.UnitTestProject">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d2eedbef-6419-4d23-bdc3-a63b03f50387" direction="Forward">
+          <layerMoniker Id="e38bd7ff-dc10-4efe-8eed-302d873a4f77" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="fc44756f-3b82-480c-a34c-ab666cdc44be" direction="Forward">
+          <layerMoniker Id="7f133d48-5cbe-4769-9851-f5ef621a0395" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="d502800e-b2ec-464e-8618-e6e9498c89a0" direction="Forward">
+          <layerMoniker Id="118a0c05-bf9e-4b42-9839-f57baa51ce86" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="76ae28c9-51c8-4887-afa4-b55590ec3cdd" direction="Forward">
+          <layerMoniker Id="2a5491fd-a83f-4ea6-8a42-7f82651254ce" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="15d12493-7006-4587-9a11-4b9adc14a833" name="Minutrade.ECommerce.UnitTestProject">
+          <ArtifactNode Label="Minutrade.ECommerce.UnitTestProject" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.UnitTestProject/Minutrade.ECommerce.UnitTestProject.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.UnitTestProject)" Label="Minutrade.ECommerce.UnitTestProject.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="e38bd7ff-dc10-4efe-8eed-302d873a4f77" name="Minutrade.ECommerce.WebApi">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f351f434-5e99-4c0e-bee8-32b44ca34781" direction="Forward">
+          <layerMoniker Id="7f133d48-5cbe-4769-9851-f5ef621a0395" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="6b08ee89-5c68-468d-b08a-a41e92817dc1" name="Minutrade.ECommerce.WebApi">
+          <ArtifactNode Label="Minutrade.ECommerce.WebApi" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.WebApi/Minutrade.ECommerce.WebApi.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.WebApi)" Label="Minutrade.ECommerce.WebApi.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="5b41e6e3-c7d6-4363-9592-43d25378b41d" name="Minutrade.ECommerce.Dto">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="17d68809-2530-440b-95df-3f4d6ae471c7" direction="Forward">
+          <layerMoniker Id="e38bd7ff-dc10-4efe-8eed-302d873a4f77" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="454c29dc-1687-4156-97c2-7dc6979e4b64" direction="Forward">
+          <layerMoniker Id="7f133d48-5cbe-4769-9851-f5ef621a0395" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1a2b1053-70c6-4b93-84ba-6f88a77f2a24" direction="Forward">
+          <layerMoniker Id="a8a2b85e-2e3b-4123-8dee-e9ac80ab4fbe" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="acd41acf-26e9-4ea5-a401-ae7830023721" name="Minutrade.ECommerce.Dto">
+          <ArtifactNode Label="Minutrade.ECommerce.Dto" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.Dto/Minutrade.ECommerce.Dto.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.Dto)" Label="Minutrade.ECommerce.Dto.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="7f133d48-5cbe-4769-9851-f5ef621a0395" name="Minutrade.ECommerce.BusinessObjects">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="28e0f64e-c643-4754-942b-a87c5cae5025" direction="Forward">
+          <layerMoniker Id="2a5491fd-a83f-4ea6-8a42-7f82651254ce" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="1173e544-bcb0-4e9e-999b-ba6352e858b4" name="Minutrade.ECommerce.BusinessObjects">
+          <ArtifactNode Label="Minutrade.ECommerce.BusinessObjects" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.BusinessObjects/Minutrade.ECommerce.BusinessObjects.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.BusinessObjects)" Label="Minutrade.ECommerce.BusinessObjects.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="2a5491fd-a83f-4ea6-8a42-7f82651254ce" name="Minutrade.ECommerce.Dal">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4cdb7317-3aad-4ddc-a624-761f241c97d0" direction="Forward">
+          <layerMoniker Id="26aa04aa-7ff8-46fc-b60f-5cf44a23255d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="3821f31c-92e5-4427-a6e5-9630d0f1b9e2" name="Minutrade.ECommerce.Dal">
+          <ArtifactNode Label="Minutrade.ECommerce.Dal" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.Dal/Minutrade.ECommerce.Dal.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.Dal)" Label="Minutrade.ECommerce.Dal.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="118a0c05-bf9e-4b42-9839-f57baa51ce86" name="Minutrade.ECommerce.CommonObjects">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a229aa67-d16f-4a55-b944-389e081aedd4" direction="Forward">
+          <layerMoniker Id="e38bd7ff-dc10-4efe-8eed-302d873a4f77" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="83cf5162-87f7-405f-9a3d-577d15f1a1d9" direction="Forward">
+          <layerMoniker Id="7f133d48-5cbe-4769-9851-f5ef621a0395" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="f584cc45-dd52-45dd-91ed-1b1dfc5cb15f" name="Minutrade.ECommerce.CommonObjects">
+          <ArtifactNode Label="Minutrade.ECommerce.CommonObjects" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.CommonObjects/Minutrade.ECommerce.CommonObjects.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.CommonObjects)" Label="Minutrade.ECommerce.CommonObjects.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="26aa04aa-7ff8-46fc-b60f-5cf44a23255d" name="DataBase" />
+    <layer Id="a8a2b85e-2e3b-4123-8dee-e9ac80ab4fbe" name="Minutrade.ECommerce.WebApp">
+      <references>
+        <reference Id="17bd0aca-a785-4d0a-890e-e846d601bfb7" name="Minutrade.ECommerce.WebApp">
+          <ArtifactNode Label="Minutrade.ECommerce.WebApp" Category="CodeSchema_Project" Id="(Assembly=../../Minutrade.ECommerce.WebApp/Minutrade.ECommerce.WebApp.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Minutrade.ECommerce.WebApp)" Label="Minutrade.ECommerce.WebApp.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

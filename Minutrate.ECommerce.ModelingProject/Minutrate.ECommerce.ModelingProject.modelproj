@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9e62e543-c27b-44f2-b048-ffad38d22bc5}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Minutrate.ECommerce.ModelingProject</Name>
+    <RootNamespace>Minutrate.ECommerce.ModelingProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Minutrate.ECommerce.ModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="LayerDiagram" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram\Conceptual.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram\Conceptual.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram\Conceptual.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram\Conceptual.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram\Conceptual.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Minutrade.ECommerce.BusinessObjects\Minutrade.ECommerce.BusinessObjects.csproj">
+      <Name>Minutrade.ECommerce.BusinessObjects</Name>
+      <Project>{d5827731-4df3-4639-adb1-ce4cc6a3ddc8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.CommonObjects\Minutrade.ECommerce.CommonObjects.csproj">
+      <Name>Minutrade.ECommerce.CommonObjects</Name>
+      <Project>{5ff274c8-7341-4bc6-96a0-5a746aa0b0d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.Dal\Minutrade.ECommerce.Dal.csproj">
+      <Name>Minutrade.ECommerce.Dal</Name>
+      <Project>{f94c0df4-64e6-454d-b9db-73773c49b8ea}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.Dto\Minutrade.ECommerce.Dto.csproj">
+      <Name>Minutrade.ECommerce.Dto</Name>
+      <Project>{f19b4013-627c-42a4-94ac-6ec8f8358627}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.UnitTestProject\Minutrade.ECommerce.UnitTestProject.csproj">
+      <Name>Minutrade.ECommerce.UnitTestProject</Name>
+      <Project>{d637fd4b-a82a-4b71-8428-10f98ee7c35d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.WebApi\Minutrade.ECommerce.WebApi.csproj">
+      <Name>Minutrade.ECommerce.WebApi</Name>
+      <Project>{894390c4-7046-493b-89d1-49dfbaf03c5a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Minutrade.ECommerce.WebApp\Minutrade.ECommerce.WebApp.csproj">
+      <Name>Minutrade.ECommerce.WebApp</Name>
+      <Project>{6bb4ec0d-9b52-4834-b401-23ff896369e7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

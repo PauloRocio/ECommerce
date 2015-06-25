@@ -1,0 +1,80 @@
+﻿using System.Collections.Generic;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Minutrade.ECommerce.BusinessObjects;
+using Minutrade.ECommerce.Dto;
+
+namespace Minutrade.ECommerce.WebApi.Areas.Phone.Controllers
+{
+    public class PhonesController : ApiController
+    {
+        /// <summary>
+        /// Método responsável por retornar uma lista de telefones
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<PhoneDto> GetPhones()
+        {
+            return new PhoneBo().GetPhones();
+        }
+
+        /// <summary>
+        /// Método responsável por selecionar um telefone específico
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [ResponseType(typeof (PhoneDto))]
+        public IHttpActionResult GetPhone(long id)
+        {
+            var phone = new PhoneBo().GetPhone(id);
+
+            if (phone == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(phone);
+        }
+<<<<<<< HEAD
+=======
+
+        public IHttpActionResult PutClient(long id, PhoneDto phone)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (id != phone.id)
+                return BadRequest();
+
+            new PhoneBo().PutPhone(id, phone);
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+
+        public IHttpActionResult PostClient(PhoneDto phone)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            new PhoneBo().PostPhone(phone);
+
+            return CreatedAtRoute("DefaultApi", new { id = phone.id }, phone);
+        }
+
+        public IHttpActionResult DeletePhone(long id)
+        {
+            PhoneDto phone = new PhoneBo().DeletePhone(id);
+
+            return Ok(phone);
+        }
+
+      //  protected override void Dispose(bool disposing)
+      //  {
+      //      if (disposing)
+      //      {
+      //          db.Dispose();
+      //      }
+      //      base.Dispose(disposing);
+      //  }
+>>>>>>> Modificada PhoneControllers da API - adição de post e put and delete
+    }
+}

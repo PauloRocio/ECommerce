@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.Dal", "Minutrade.ECommerce.Dal\Minutrade.ECommerce.Dal.csproj", "{F94C0DF4-64E6-454D-B9DB-73773C49B8EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.BusinessObjects", "Minutrade.ECommerce.BusinessObjects\Minutrade.ECommerce.BusinessObjects.csproj", "{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.Dto", "Minutrade.ECommerce.Dto\Minutrade.ECommerce.Dto.csproj", "{F19B4013-627C-42A4-94AC-6EC8F8358627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.WebApi", "Minutrade.ECommerce.WebApi\Minutrade.ECommerce.WebApi.csproj", "{894390C4-7046-493B-89D1-49DFBAF03C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.CommonObjects", "Minutrade.ECommerce.CommonObjects\Minutrade.ECommerce.CommonObjects.csproj", "{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - InfraStructure", "2 - InfraStructure", "{6E8096A9-A917-4783-A154-400561C0FBEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - DataAccess", "3 - DataAccess", "{D48E7A73-8975-4318-991E-438E35C5101B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - BusinessLogic", "4 - BusinessLogic", "{9AF8B29A-6255-4666-84D8-309007FA7B47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - WebApi", "5 - WebApi", "{79116DAE-EA02-4A3F-BCE5-B295E171CD77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - View", "7 - View", "{3E3B1C9F-DCC5-4A1F-A117-E9A696D8B347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - DataBase", "1 - DataBase", "{79B4FA0C-A1AA-4F72-88EE-4B105C0C69CA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Minutrade.ECommerce.DataBase", "Minutrade.ECommerce.DataBase\Minutrade.ECommerce.DataBase.sqlproj", "{BECE008D-6921-4785-94F6-777D59BE202A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - TestProjects", "6 - TestProjects", "{35729C7A-1803-478A-B474-7ECB5C883742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.UnitTestProject", "Minutrade.ECommerce.UnitTestProject\Minutrade.ECommerce.UnitTestProject.csproj", "{D637FD4B-A82A-4B71-8428-10F98EE7C35D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Minutrate.ECommerce.ModelingProject", "Minutrate.ECommerce.ModelingProject\Minutrate.ECommerce.ModelingProject.modelproj", "{9E62E543-C27B-44F2-B048-FFAD38D22BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutrade.ECommerce.WebApp", "Minutrade.ECommerce.WebApp\Minutrade.ECommerce.WebApp.csproj", "{6BB4EC0D-9B52-4834-B401-23FF896369E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{112849B9-E691-428E-97E6-08FF33F5C7B6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F94C0DF4-64E6-454D-B9DB-73773C49B8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94C0DF4-64E6-454D-B9DB-73773C49B8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94C0DF4-64E6-454D-B9DB-73773C49B8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94C0DF4-64E6-454D-B9DB-73773C49B8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19B4013-627C-42A4-94AC-6EC8F8358627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19B4013-627C-42A4-94AC-6EC8F8358627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19B4013-627C-42A4-94AC-6EC8F8358627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19B4013-627C-42A4-94AC-6EC8F8358627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894390C4-7046-493B-89D1-49DFBAF03C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894390C4-7046-493B-89D1-49DFBAF03C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894390C4-7046-493B-89D1-49DFBAF03C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894390C4-7046-493B-89D1-49DFBAF03C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECE008D-6921-4785-94F6-777D59BE202A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECE008D-6921-4785-94F6-777D59BE202A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECE008D-6921-4785-94F6-777D59BE202A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECE008D-6921-4785-94F6-777D59BE202A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D637FD4B-A82A-4B71-8428-10F98EE7C35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D637FD4B-A82A-4B71-8428-10F98EE7C35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D637FD4B-A82A-4B71-8428-10F98EE7C35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D637FD4B-A82A-4B71-8428-10F98EE7C35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E62E543-C27B-44F2-B048-FFAD38D22BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E62E543-C27B-44F2-B048-FFAD38D22BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E62E543-C27B-44F2-B048-FFAD38D22BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E62E543-C27B-44F2-B048-FFAD38D22BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB4EC0D-9B52-4834-B401-23FF896369E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB4EC0D-9B52-4834-B401-23FF896369E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB4EC0D-9B52-4834-B401-23FF896369E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB4EC0D-9B52-4834-B401-23FF896369E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F94C0DF4-64E6-454D-B9DB-73773C49B8EA} = {D48E7A73-8975-4318-991E-438E35C5101B}
+		{D5827731-4DF3-4639-ADB1-CE4CC6A3DDC8} = {9AF8B29A-6255-4666-84D8-309007FA7B47}
+		{F19B4013-627C-42A4-94AC-6EC8F8358627} = {9AF8B29A-6255-4666-84D8-309007FA7B47}
+		{894390C4-7046-493B-89D1-49DFBAF03C5A} = {79116DAE-EA02-4A3F-BCE5-B295E171CD77}
+		{5FF274C8-7341-4BC6-96A0-5A746AA0B0D6} = {6E8096A9-A917-4783-A154-400561C0FBEF}
+		{BECE008D-6921-4785-94F6-777D59BE202A} = {79B4FA0C-A1AA-4F72-88EE-4B105C0C69CA}
+		{D637FD4B-A82A-4B71-8428-10F98EE7C35D} = {35729C7A-1803-478A-B474-7ECB5C883742}
+		{6BB4EC0D-9B52-4834-B401-23FF896369E7} = {3E3B1C9F-DCC5-4A1F-A117-E9A696D8B347}
+	EndGlobalSection
+EndGlobal
